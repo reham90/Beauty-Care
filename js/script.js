@@ -114,30 +114,30 @@ $(document).ready(function() {
 
   
 
-  ///////// **clients-swiper-section** /////////
-  var screen = new Swiper(".clients .swiper-container", {
+  ///////// **products-swiper-section** /////////
+  var screen = new Swiper(".products .swiper-container", {
       loop: true,
       autoplay: true,
       pagination: {
-          el: ".clients .swiper-pagination",
+          el: ".products .swiper-pagination",
           clickable: true,
       },
       navigation: {
-          nextEl: ".clients .swiper-btn-next",
-          prevEl: ".clients .swiper-btn-prev",
+          nextEl: ".products .swiper-btn-next",
+          prevEl: ".products .swiper-btn-prev",
       },
       breakpoints: {
           0: {
-              slidesPerView: 3,
+              slidesPerView: 2,
               spaceBetween: 15,
           },
           767: {
-              slidesPerView: 4,
+              slidesPerView: 3,
               spaceBetween: 15,
           },
 
           992: {
-              slidesPerView: 5,
+              slidesPerView: 4,
               spaceBetween: 30,
           },
           1199: {
@@ -147,40 +147,72 @@ $(document).ready(function() {
       },
   });
 
-  ///////// **partners-swiper-section** /////////
-  var screen = new Swiper(".partners .swiper-container", {
-      loop: true,
-      autoplay: true,
-      pagination: {
-          el: ".partners .swiper-pagination",
-          clickable: true,
-      },
-      navigation: {
-          nextEl: ".partners .swiper-btn-next",
-          prevEl: ".partners .swiper-btn-prev",
-      },
-      breakpoints: {
-          0: {
-              slidesPerView: 3,
-              spaceBetween: 15,
-          },
-          767: {
-              slidesPerView: 4,
-              spaceBetween: 15,
-          },
+   ///////// **best-seller-swiper-section** /////////
+   var screen = new Swiper(".best-sellerr .swiper-container", {
+    loop: true,
+    autoplay: true,
+    pagination: {
+        el: ".best-sellerr .swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".best-sellerr .swiper-btn-next",
+        prevEl: ".best-sellerr .swiper-btn-prev",
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+        },
+        767: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+        },
 
-          992: {
-              slidesPerView: 5,
-              spaceBetween: 30,
-          },
-          1199: {
-              slidesPerView: 6,
-              spaceBetween: 30,
-          },
-      },
-  });
+        992: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },
+        1199: {
+            slidesPerView: 6,
+            spaceBetween: 30,
+        },
+    },
+});
+ 
 
+   ///////// **machines-swiper-section** /////////
+   var screen = new Swiper(".machines .swiper-container", {
+    loop: true,
+    autoplay: true,
+    pagination: {
+        el: ".machines .swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".machines .swiper-btn-next",
+        prevEl: ".machines .swiper-btn-prev",
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+        },
+        767: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+        },
 
+        992: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },
+        1199: {
+            slidesPerView: 6,
+            spaceBetween: 30,
+        },
+    },
+});
 
   ////////////** footer transfer into accordion **//////////
 
