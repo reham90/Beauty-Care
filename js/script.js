@@ -84,6 +84,34 @@ $(document).ready(function() {
       }
   });
 
+   /// ////// ** main-slider** /////////
+   const specials = new Swiper('.main-slider .swiper-container', {
+    loop: true,
+    autoplay: true,
+    pagination: {
+        el: '.main-slider .swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.main-slider .swiper-btn-next',
+        prevEl: '.main-slider .swiper-btn-prev',
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        767: {
+            slidesPerView: 1,
+        },
+        992: {
+            slidesPerView: 1,
+        },
+        1199: {
+            slidesPerView: 1,
+        },
+    },
+});
+
   
 
   ///////// **clients-swiper-section** /////////
