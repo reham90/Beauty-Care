@@ -1051,13 +1051,56 @@ html[dir="rtl"] .first-level-link:after {
   display: flex;
   justify-content: space-between;
 }
+.contact-title{
+  color: #fff;
+  font-size: 20px;
+  font-family: "NeoSansArabicMedium";
+  margin: 0 0 15px;
+  text-align: start;
+}
+.contact-text{
+  color: #fff;
+  font-size: 18px;
+  margin: 0;
+  text-align: start;
+}
+.contact-details{
+  display: flex;
+  align-items: center;
+}
+.contact-iconn{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+  font-size: 30px;
+  margin-inline-end: 10px;
+}
+.contact-details-title{
+  color: #fff;
+  font-size: 16px;
+  text-align: start;
+  font-family: "NeoSansArabicMedium";
+  margin: 0 0 15px;
+}
+.contact-details-answer{
+  color: #fff;
+  text-align: start;
+  display: block;
+  margin: 0;
+  font-size: 14px;
+}
 /*                contact-bar                           */
 
 /*                                   footer                            */
 .footer {
   padding: 71px 0 47px;
   position: relative;
-  background: var(--main-color);
+  background: #fff;
   overflow: hidden;
 }
 .footer-bg{
@@ -1083,7 +1126,7 @@ html[dir="ltr"] .footer-bg{
   text-transform: capitalize;
   white-space: nowrap;
   font-size: 16px;
-  color: #fff;
+  color: #000;
   margin: 0 0 32px;
   text-align: start;
 
@@ -1100,7 +1143,7 @@ html[dir="ltr"] .footer-bg{
 }
 
 .nav-foot-link {
-  color: rgb(113, 178, 239);
+  color: #000;
   font-size: 14px;
   text-transform: capitalize;
   display: inline-flex;
@@ -1110,10 +1153,10 @@ html[dir="ltr"] .footer-bg{
 }
 
 .nav-foot-link:hover {
-  color: #fff;
+  color: var(--main-hover) !important;
 }
 .contact-list .nav-foot-li .nav-foot-link {
-  color: #fff;
+  color: #000;
   display: flex;
   align-items: center;
 }
@@ -1145,72 +1188,30 @@ html[dir="ltr"] .footer-bg{
   justify-content: center;
   width: 40px;
   height: 40px;
-  background-color: rgb(11, 84, 153);
+  background-color: #000;
   border-radius: 50%;
   transition: 0.5s;
 }
 
 .social-list-link a:hover .social-icon {
-  background-color: #fff;
-  color: var(--main-color);
-}
-
-.subscribe-text {
+  background-color: var(--main-hover);
   color: #fff;
-  font-size: 14px;
-
-  margin: 0 0 22px;
 }
-.newsletter-cont {
-  position: relative;
-  z-index: 9;
-}
-.newsletter-input {
-  text-align: start;
-  background-color: #fff;
-  width: 100%;
-  height: 45px;
-  border-radius: 22.5px;
-  padding: 0 20px;
-  padding-inline-end: 20px;
-  font-size: 12px;
-
-  color: var(--sec-color);
-  border: 2px solid transparent;
-  outline: none;
-  transition: all 0.3s ease-in-out;
-}
-.newsletter-input::placeholder {
-  font-size: 12px;
-
-  color: rgb(128, 128, 128);
-}
-.newsletter-input:focus {
-  border: 2px solid var(--sec-color);
-}
-.newsletter-button {
-  position: absolute;
-  inset-inline-end: 17px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: var(--sec-color);
-  border: none;
-  border-radius: 0;
+.app{
   background-color: transparent;
+  border: 0;
   padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease-in-out;
+  outline: none;
+  width: 200px;
 }
-.newsletter-submit-icon {
-  font-size: 24px;
-  color: #636f74;
+.app img{
+  width: 100%;
+}
+.app:focus{
+  outline: none;
 }
 
-html[dir="ltr"] .newsletter-submit-icon {
-  transform: scaleX(-1);
-}
+
 
 .copy-flex {
   display: -webkit-box;
@@ -1226,14 +1227,11 @@ html[dir="ltr"] .newsletter-submit-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-
+align-items: center;
   font-size: 13px;
 
-  color: #fff;
+  color: #000;
   text-align: start;
-}
-.tasawok-logo {
-  margin-inline-start: 2px;
 }
 
 /*                             footer accordion                 */
@@ -1314,6 +1312,28 @@ display: none;
   display: grid;
     grid-template-columns: repeat(2,1fr);
     padding: 30px 0 60px;
+ }
+ .contact-bar-content{
+  flex-wrap: wrap;
+ }
+ .contact-title{
+  text-align: center;
+  width: 100%;
+ }
+ .contact-text{
+  text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+ }
+ .contact-block{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+ }
+ .contact-details-text{
+  width: 130px;
  }
  .banner-image{
   height: 200px;
@@ -1475,9 +1495,18 @@ display: none;
 .search-field{
   width: 400px;
 }
+.contact-details-title{
+  font-size: 15px;
+}
+.contact-title{
+  font-size: 18px;
+}
 .main-slider-img {
   height: 300px;
  
+}
+.contact-text{
+  font-size: 16px;
 }
 .main-slider-image{
  height: 300px;
@@ -1740,7 +1769,13 @@ inset-inline-end: 0;
       grid-template-columns: repeat(3,1fr);
      
    }
- 
+   .contact-block{
+    justify-content: space-between;
+    width: auto;
+   }
+   .contact-bar-content{
+    justify-content: center;
+   }
 
   .nav-foot-link {
     font-size: 13px;
