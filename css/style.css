@@ -1314,6 +1314,9 @@ html[dir="rtl"] .footer-accordion.active:after {
  .title-1{
   font-size: 11px;
  }
+ .bannerr{
+  gap:15px;
+ }
  .medal-icon{
 display: none;
  }
