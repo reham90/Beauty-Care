@@ -19,7 +19,7 @@ a:hover {
 }
 :root {
   --main-color: #000;
-  --main-hover: rgb(246, 90, 137);
+  --main-hover: #FFADC0;
   
 }
 
@@ -160,7 +160,7 @@ header {
 .search-field{
   height: 45px;
   background-color: #f7f8fa;
-  border-radius: 8px;
+  border-radius: 22.5px;
   border:1px solid transparent;
   transition: 0.5s;
   width: 888px;
@@ -595,7 +595,7 @@ html[dir="rtl"] .first-level-link:after {
   }
 .fixed-nav {
   background-color: #fff;
-  margin-top: -122px;
+  margin-top: -180px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -627,7 +627,7 @@ html[dir="rtl"] .first-level-link:after {
           announcement bar                   */
 .announcement-bar {
   background-color: #000;
-  margin-top: 122px;
+ 
 }
 .announcement-list{
   display: flex;
@@ -671,11 +671,12 @@ html[dir="rtl"] .first-level-link:after {
 
 /*                       main-slider-section                             */
 .main-slider-section{
-  padding: 15px 0;
+  padding: 15px ;
 }
 .main-slider {
   position: relative;
   overflow: hidden;
+  margin-top: 169px;
 }
 .main-slider-img {
   height: 400px;
@@ -810,6 +811,11 @@ html[dir="rtl"] .first-level-link:after {
  
   transition: 0.5s;
 }
+.bannerr{
+  display: flex;
+  gap:30px;
+  width: 100%;
+}
 
 .banner-image{
   overflow: hidden;
@@ -821,6 +827,9 @@ html[dir="rtl"] .first-level-link:after {
 .banner-image:hover .banner-img{
   transform: scale(1.2);
 
+}
+.bannerr a{
+  width: 100%;
 }
 /*                       banners-section                             */
 
@@ -1364,11 +1373,12 @@ display: none;
   .announcement-list li{
     white-space: nowrap;
   }
-  .announcement-bar{
-    margin-top: 160px;
-  }
+  
  .nav-header{
   flex-wrap: wrap;
+ }
+ .main-slider{
+  margin-top: 203px;
  }
   .search-field{
     width: 100%;
@@ -1429,7 +1439,7 @@ display: none;
     border-bottom: 0;
   }
   .fixed-nav{
-    margin-top: -180px;
+    margin-top: -245px;
   }
   .menu-bar-content{
     position: relative;
