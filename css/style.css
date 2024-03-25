@@ -962,6 +962,65 @@ html[dir="rtl"] .first-level-link:after {
   padding: 15px;
   position: relative;
 }
+.single-page-title{
+  text-align: center;
+  color: var(--main-color);
+  font-family: "NeoSansArabicBold";
+  font-size: 24px;
+  margin: 15px 0 ;
+  display: block;
+ width: 100%;
+}
+.sign-in-note{
+  color: var(--main-hover);
+  font-size: 20px;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+margin-bottom: 40px;
+}
+.sign-input{
+  background-color: var(--main-hover) !important;
+  height: 45px !important;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.sign-in-btn{
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: var(--main-color);
+  color: #fff;
+  font-family: "NeoSansArabicMedium";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin: 30px auto;
+  border: 0;
+  outline: none;
+  transition: 0.5s;
+}
+.sign-in-btn:hover{
+  background-color: var(--main-hover);
+}
+.sign-in-btn:focus{
+  outline: none;
+}
+.sign-in-content{
+  width: 500px;
+  margin: 0 auto 50px;
+}
 .best-seller{
   background-color: var(--main-hover);
   color: #fff;
@@ -1462,6 +1521,9 @@ html[dir="rtl"] .footer-accordion.active:after {
  .filter-section{
   margin-inline-end: 0;
   margin-bottom: 30px;
+  width: 100%;
+ }
+ .sign-in-content{
   width: 100%;
  }
  .breadcrumb{
