@@ -712,7 +712,9 @@ html[dir="rtl"] .first-level-link:after {
 	padding: 0;
 	transition: 0.5s;
   }
-  
+  .dropbtn{
+    transition: 0.5s;
+  }
   .dropbtn:hover i{
 	color: var(--main-hover);
   }
