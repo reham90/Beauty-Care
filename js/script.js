@@ -141,7 +141,7 @@ $(document).ready(function() {
               spaceBetween: 30,
           },
           1199: {
-              slidesPerView: 6,
+              slidesPerView: 4,
               spaceBetween: 30,
           },
       },
@@ -214,6 +214,15 @@ $(document).ready(function() {
     },
 });
 
+//////////////////////////////// fixed-search ////////////////////////////////////
+$(".fixed-search").click(function (e) {
+    e.preventDefault();
+    $(".overlay-box").fadeToggle(300);
+    $(".search-section").toggleClass("search-open");
+    $(".fixed-search .open-search").toggleClass("close-search");
+    $("body").toggleClass("overflow");
+  
+  });
   ////////////** footer transfer into accordion **//////////
 
   if ($(window).width() <= 767) {
