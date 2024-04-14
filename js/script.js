@@ -161,20 +161,20 @@ $(document).ready(function() {
     },
     breakpoints: {
         0: {
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: 15,
         },
         767: {
-            slidesPerView: 3,
+            slidesPerView: 2,
             spaceBetween: 15,
         },
 
         992: {
-            slidesPerView: 4,
+            slidesPerView: 3,
             spaceBetween: 30,
         },
         1199: {
-            slidesPerView: 6,
+            slidesPerView: 5,
             spaceBetween: 30,
         },
     },

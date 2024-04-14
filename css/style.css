@@ -1615,12 +1615,24 @@ input[type=checkbox], input[type=radio]{
 
 /*                contact-bar                              */
 .contact-bar{
-  background-color: var(--main-hover);
-  padding: 30px 0;
+  background-color: var(--main-color);
+  padding: 120px 0;
 }
 .contact-bar-content{
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+}
+.contact-circle{
+  background-color: var(--main-hover);
+  border-radius: 50%;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+  margin-inline-end: 50px;
 }
 .contact-title{
   color: #fff;
@@ -1634,29 +1646,25 @@ input[type=checkbox], input[type=radio]{
   font-size: 18px;
   margin: 0;
   text-align: start;
+  margin-bottom: 50px;
 }
 .contact-details{
   display: flex;
   align-items: center;
 }
-.contact-iconn{
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
+.contact-details-text{
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: #000;
-  color: #fff;
-  font-size: 30px;
-  margin-inline-end: 10px;
+  margin-bottom: 20px;
 }
+
 .contact-details-title{
   color: #fff;
   font-size: 16px;
   text-align: start;
   font-family: "NeoSansArabicMedium";
-  margin: 0 0 15px;
+  margin: 0;
+  margin-inline-end: 30px;
 }
 .contact-details-answer{
   color: #fff;
@@ -1665,6 +1673,56 @@ input[type=checkbox], input[type=radio]{
   margin: 0;
   font-size: 14px;
 }
+.contact-input{
+  background-color: transparent;
+  border:0;
+  border-bottom: 2px solid #fff;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  outline: none;
+  transition: 0.5s;
+  width: 500px;
+  height: 45px;
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.contact-input::placeholder{
+  color: #fff;
+  font-size: 16px;
+}
+.contact-input:focus{
+  border-bottom: 2px solid var(--main-hover);
+}
+.contact-textarea{
+  height: 200px;
+}
+.send-btn{
+  background-color: var(--main-hover);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 18px;
+  width: 100px;
+  aspect-ratio: 1 / 1;
+  border:0;
+  outline: none;
+  transition: 0.5s;
+  padding: 0;
+  margin: 0 auto;
+}
+.send-btn:hover{
+  background-color: #fff;
+  color: var(--main-hover);
+}
+.send-btn:focus{
+  outline: none;
+  border:0;
+}
+
 /*                contact-bar                           */
 
 /*                                   footer                            */
@@ -1882,6 +1940,20 @@ html[dir="rtl"] .footer-accordion.active:after {
 .products-swiper-section{
   padding: 50px 0;
 }
+.contact-circle{
+  width: 100%;
+  margin-inline-end: 0;
+  padding: 0 20px;
+}
+.contact-bar{
+  padding: 50px 0;
+}
+.contact-input{
+  width: 100%;
+}
+.contact-form{
+  width: 100%;
+}
 .logo{
   max-width: 150px;
 }
@@ -1959,16 +2031,8 @@ display: none;
     margin-bottom: 30px;
     width: 100%;
  }
- .contact-block{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-bottom: 15px;
-  flex-wrap: wrap;
- }
- .contact-details-text{
-  width: 130px;
- }
+ 
+ 
  .banner-image{
   height: 200px;
  }
@@ -2166,7 +2230,7 @@ display: none;
  
 }
 .contact-text{
-  font-size: 16px;
+ text-align: center;
 }
 .main-slider-image{
  height: 300px;
@@ -2440,9 +2504,12 @@ inset-inline-end: 0;
     width: auto;
    }
    .contact-bar-content{
-    justify-content: center;
+   flex-wrap: nowrap;
+   align-items: flex-start;
    }
-
+   .contact-circle{
+    margin-inline-end: 30px;
+   }
   .nav-foot-link {
     font-size: 13px;
   }
